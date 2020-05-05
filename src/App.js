@@ -19,7 +19,7 @@ class App extends Component {
             <Route path="/portfolio" exact component={Portfolio} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
-            <Redirect from="/" to="/portfolio" />
+            <Redirect exact from="/" to="/portfolio" />
           </Switch>
         </div>
       </div>

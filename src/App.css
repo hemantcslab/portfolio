@@ -18,3 +18,109 @@
 .r-p1 {
   margin-left: 25%;
 }
+
+.sidebar-parent {
+  height: 100%;
+  padding: 20px;
+  overflow-y: auto;
+  position: relative;
+  box-sizing: border-box;;
+}
+
+.sidebar-user-url {
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+
+.sidebar-user-photo {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.sidebar-user-photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.sidebar-user-content {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.sidebar-user-name {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.sidebar-user-title {
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.sidebar-navigation {
+  margin: 25px 0px;
+  line-height: 30px;
+  position: relative;
+  font-size: 14px;
+}
+
+.sidebar-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-navigation li {
+  position: relative;
+  padding: 0 20px;
+}
+
+.sidebar-navigation a {
+  color: #ccc;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar-social {
+  margin-top: 25px;
+  padding: 0px 20px;
+  font-size: 22px;
+}
+
+.sidebar-title {
+  font-size: 11px;
+  font-weight: 300;
+  color: #aaa;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.sidebar-content {
+  font-size: 22px;
+}
+
+.sidebar-button {
+  padding: 0;
+  color: #ccc;
+  line-height: 1;
+  margin-right: .2em;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.sidebar-icon {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  color: #ccc;
+}
+
+.sidebar-icon:before {
+  content: "\f0e0";
+}
