@@ -1,17 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import { Route, Switch, Redirect } from 'react-router-dom';
+import Portfolio from './component/portfolio';
+import About from './component/about';
+import Contact from './component/contact';
+import Sidebar from './component/sidebar';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
-        Portfolio
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="container">
+        <div className="l-p1">
+          <Sidebar />
+        </div>
+
+        <div className="r-p1">
+          <Switch>
+            <Route path="/portfolio" exact component={Portfolio} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+            <Redirect from="/" to="/portfolio" />
+          </Switch>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
