@@ -5,6 +5,8 @@ import Portfolio from './component/portfolio';
 import About from './component/about';
 import Contact from './component/contact';
 import Sidebar from './component/sidebar';
+import Resume from './component/resume';
+import Blog from './component/blog';
 
 class App extends Component {
   render() {
@@ -16,10 +18,12 @@ class App extends Component {
 
         <div className="r-p1">
           <Switch>
-            <Route path="/portfolio" exact component={Portfolio} />
             <Route path="/about" component={About} />
+            <Route path="/portfolio" exact component={Portfolio} />
+            <Route path="/resume" component={Resume} />
+            <Route path="/blog" component={Blog} />
             <Route path="/contact" component={Contact} />
-            <Redirect exact from="/" to="/portfolio" />
+            <Redirect exact from="/" to="/about" />
           </Switch>
         </div>
       </div>
