@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   position: fixed;
-  background: #f6f6f6;
+  /* background: #f6f6f6; */
 }
 
 .l-p1 {
@@ -16,7 +16,14 @@
 }
 
 .r-p1 {
+  height: 100%;
   margin-left: 20%;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+}
+
+.r-p1::-webkit-scrollbar {
+  display: none;
 }
 
 .sidebar-parent {
@@ -24,7 +31,12 @@
   padding: 20px;
   overflow-y: auto;
   position: relative;
-  box-sizing: border-box;;
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+}
+
+.sidebar-parent::-webkit-scrollbar {
+  display: none;
 }
 
 .sidebar-user-url {
@@ -155,3 +167,120 @@
   display: block;
   margin: 0;
 }
+
+.portfolio-inner {
+  position: relative;
+}
+
+.portfolio-parent {
+  padding: 50px;
+  color: #333;
+}
+
+.portfolio-title {
+  color: #555;
+  line-height: 1;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.portfolio-timeline {
+  list-style: none;
+  padding-left: 30px;
+  margin: 0px 0 0px 120px;
+  border-left: 8px solid #eee9dc;
+}
+
+.portfolio-work {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.portfolio-timeline:not(:first-child) .portfolio-work {
+  padding-top: 30px;
+  border-top: 1px solid #ddd;
+}
+
+.portfolio-timeline-title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: .3em;
+}
+
+.portfolio-timeline-sub-title {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  text-transform: none;
+}
+
+.portfolio-date {
+  margin-top: -10px;
+  left: -158px;
+  font-size: 0.95em;
+  line-height: 20px;
+  position: absolute;
+}
+
+.portfolio-circle {
+  margin-top: -10px;
+  left: -44px;
+  width: 10px;
+  height: 10px;
+  background: #48b379;
+  border: 5px solid #eee9dc;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+}
+
+.portfolio-timeline:first-child .portfolio-date,
+.portfolio-timeline:first-child .portfolio-circle {
+  top: 10px;
+}
+
+.portfolio-timeline:not(:first-child) .portfolio-date,
+.portfolio-timeline:not(:first-child) .portfolio-circle {
+  top: 50px;
+}
+
+.portfolio-content {
+  border-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5em;
+  position: relative;
+}
+
+.portfolio-content p,
+.portfolio-content strong {
+  margin: 0;
+}
+
+.portfolio-content strong {
+  font-weight: 500;
+}
+
+.portfolio-list {
+  font-size: 16px;
+  color: #878787;
+  margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
